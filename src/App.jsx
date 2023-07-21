@@ -3,7 +3,8 @@ import "./App.css";
 import Footer from "./Footer";
 import Header from "./Header";
 import Products from "./Products";
-
+import Detail from "./Detail";
+import Cart from "./Cart";
 import { Routes, Route } from "react-router-dom";
 
 export default function App() {
@@ -15,6 +16,8 @@ export default function App() {
         <main>
           <Routes>
             <Route path="/" element={<Products />} />
+            <Route path="/detail" element={<Detail />} />
+            <Route path="/cart" element={<Cart />} />
           </Routes>
 
         </main>
