@@ -6,6 +6,7 @@ import Products from "./Products";
 import Detail from "./Detail";
 import Cart from "./Cart";
 import { Routes, Route } from "react-router-dom";
+import Checkout from "./Checkout";
 
 export default function App() {
 
@@ -19,6 +20,7 @@ export default function App() {
             <Route path="/:category" element={<Products />} />
             <Route path="/:category/:id" element={<Detail />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
           </Routes>
 
         </main>
